@@ -1,0 +1,10 @@
+import random
+yazı = "+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+sifre = int(input("Ne kadar uzun olsun? "))
+if sifre <= 30 and sifre >= 1:
+    k = ""
+    for i in range(sifre):
+        k += random.choice(yazı)
+    print(k)
+else:
+    print("uzunluk 1 ile 30 arasında olmalı")
